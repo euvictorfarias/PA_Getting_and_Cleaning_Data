@@ -25,3 +25,5 @@ dataFrame5 <- getSubject(dataFrame4)
 ## Step 5: Create a tidy data with averages according to activity and subject
 source("lastStep.R")
 dataFrame6 <- lastStep(dataFrame5)
+
+write.table(dataFrame6, file = "finalDataset.txt", row.names = FALSE)
